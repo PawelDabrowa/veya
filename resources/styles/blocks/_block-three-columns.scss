@@ -1,0 +1,54 @@
+.block-three-columns {
+  .triangles {
+    width: 100vw;
+    overflow: hidden;
+
+    &-wrapper {
+      background-color: $secondary;
+    }
+  }
+
+  #right-triangle {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid $secondary;
+    border-top: 50vh solid transparent;
+    border-bottom: 0 solid transparent;
+  }
+
+  #left-triangle {
+    background-color: $secondary;
+    width: 0;
+    height: 0;
+    border-right: 100vw solid $secondary;
+    border-left: 100vw solid $secondary;
+    border-top: 50vh solid transparent;
+    border-bottom: 50vh solid transparent;
+  }
+
+  #down-triangle {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid $secondary;
+    border-top: 0 solid transparent;
+    border-bottom: 50vh solid transparent;
+  }
+
+  .image-outer {
+    padding: 40px;
+    justify-content: center;
+    height: 60px;
+    align-content: center;
+  }
+
+  .image-wrapper {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-self: flex-start;
+  }
+
+  img {
+    width: 80%;
+  }
+}

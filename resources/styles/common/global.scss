@@ -1,0 +1,29 @@
+body {
+  @apply font-sans;
+}
+
+.brand {
+  @apply text-3xl font-medium text-indigo-500;
+}
+
+/* optional reset for presentation */
+* {
+  text-decoration: none;
+  font-size: 20px;
+  box-sizing: content-box;
+}
+
+.container,
+.banner {
+  max-width: 56rem !important;
+}
+
+.purple {
+  color: #4f2484;
+}
+
+@media only screen and (min-width: 640px) {
+  .banner {
+    max-width: 0 !important;
+  }
+}
