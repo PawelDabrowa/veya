@@ -34,7 +34,7 @@
 
 ## Supporting
 
-**Sage** ois an open source project and completely free to use.
+**Sage** is an open source project and completely free to use.
 
 However, the amount of effort needed to maintain and develop new features and products within the Roots ecosystem is not sustainable without proper financial backing. If you have the capability, please consider donating using the links below:
 
@@ -46,7 +46,7 @@ However, the amount of effort needed to maintain and develop new features and pr
 
 </div>
 
-## About Sage
+## About Sag
 
 Sage is a productivity-driven WordPress starter theme with a modern development workflow.
 
