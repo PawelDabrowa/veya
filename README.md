@@ -46,7 +46,7 @@ However, the amount of effort needed to maintain and develop new features and pr
 
 </div>
 
-## About Sag
+## About Sage
 
 Sage is a productivity-driven WordPress starter theme with a modern development workflow.
 
