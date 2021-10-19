@@ -8,4 +8,4 @@ yarn-error.log
 /vendor
 dist
 resources/assets/config-local.json
-dist
+
