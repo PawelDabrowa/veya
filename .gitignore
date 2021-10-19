@@ -1,8 +1,4 @@
-/node_modules
-/vendor
-/public
-npm-debug.log
-yarn-error.log
+
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 .cache-loader
