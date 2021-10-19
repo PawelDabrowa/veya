@@ -13,7 +13,6 @@
     </a>
     @endif
   </div>
-  <!--Right Col-->
   <div class="w-full lg:w-1/2 lg:py-6 text-center">
       <img src="@if (has_post_thumbnail()) {!! get_the_post_thumbnail_url() !!}" alt="Dam" @endif>
   </div>
