@@ -1,11 +1,14 @@
-@import 'tailwindcss/base';
+@import "tailwindcss/base";
 
-@import 'common/variables';
-@import 'common/global';
+@import "common/variables";
+@import "common/global";
 
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import 'components/navbar';
-@import 'components/button';
-@import 'blocks/block-three-columns';
-@import 'blocks/block-steps';
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "components/navbar";
+@import "components/button";
+@import "blocks/block-three-columns";
+@import "blocks/block-steps";
+
+@import "common/global-tea";
+@import "tea/tea-header";

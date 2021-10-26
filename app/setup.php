@@ -103,6 +103,16 @@ add_action('after_setup_theme', function () {
     }
 
     /**
+     * Enable post thumbnails
+     * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+     */
+    add_theme_support('post-thumbnails');
+
+    add_image_size('content-square', 720, 500, true);
+    add_image_size('content-tall', 325, 580, true);
+
+
+    /**
      * Register the editor color palette.
      * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#block-color-palettes
      */
@@ -229,4 +239,15 @@ add_action('widgets_init', function () {
         'name' => __('Footer', 'sage'),
         'id' => 'sidebar-footer'
     ] + $config);
+});
+
+function google_fonts_url() {
+    return 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,900,900i';
+}
+add_action('wp_enqueue_scripts', function() {
+    wp_enqueue_style('fonts/google', \App\google_fonts_url(), false,
+        null);
+});
+add_filter('mce_css', function($sheets) {
+    return "$sheets," . \App\google_fonts_url();
 });

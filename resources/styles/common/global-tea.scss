@@ -1,0 +1,127 @@
+/*
+=================
+Variables Tea Styles 
+=================
+*/
+
+:root {
+  --clr-primary-tea: #678e3e;
+  --clr-primary-light-tea: #beed8c;
+  --clr-grey-1-tea: #102a42;
+  --clr-grey-5-tea: #617d98;
+  --clr-grey-10-tea: #f1f5f8;
+  --clr-white-tea: #fff;
+  --ff-primary-tea: "Merriweather", serif;
+  --transition-tea: all 0.3s linear;
+  --spacing-tea: 0.25;
+  --radius-tea: 0.5rem;
+}
+
+/*
+=================
+Global Tea Styles 
+=================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#tea {
+  background: var(--clr-white-tea);
+  line-height: 1.5;
+  font-size: 0.875rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  h1,
+  h2,
+  h3,
+  h3 {
+    letter-spacing: var(--spacing-tea);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 0.875rem;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+  }
+
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 0.875rem;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+    }
+
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h3 {
+    line-height: 1;
+  }
+
+  .tea-btn {
+    text-transform: uppercase;
+    color: var(--clr-primary-tea);
+    padding: 0.75rem 1rem;
+    letter-spacing: var(--spacing-tea);
+    display: inline;
+    font-weight: 700;
+    transition: var(--transition-tea);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      color: var(--clr-primary-tea);
+      background-color: var(--clr-primary-light-tea);
+      font-size: 1.25rem;
+      padding: 1rem 1.75rem;
+    }
+  }
+}

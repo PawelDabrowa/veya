@@ -376,6 +376,7 @@ class ComposerStaticInit3e88ebc6c4c15f9f8a10ac2b2bf3849f
     );
 
     public static $classMap = array (
+        'App\\Blocks\\SimplePostList' => __DIR__ . '/../..' . '/app/Blocks/PostList.php',
         'App\\Providers\\ThemeServiceProvider' => __DIR__ . '/../..' . '/app/Providers/ThemeServiceProvider.php',
         'App\\View\\Components\\Alert' => __DIR__ . '/../..' . '/app/View/Components/Alert.php',
         'App\\View\\Composers\\App' => __DIR__ . '/../..' . '/app/View/Composers/App.php',

@@ -1,4 +1,4 @@
-<header class="banner md:container p-4 mx-auto flex justify-between items-center ">
+<header class="banner p-4 mx-auto flex justify-between items-center ">
   <div class="navbar-item navbar-item__logo">
     <a href="{{ home_url('/') }}">
       <img width="120" alt="{{ get_bloginfo('name', 'display') }}" src="{{ the_field('site_logo', 'option') }}" />

@@ -1,11 +1,12 @@
 {
-    "/scripts/app.js": "/scripts/app.js?id=f432b830faf73be51305",
-    "/scripts/customizer.js": "/scripts/customizer.js?id=04fb025f39898b3892b1",
-    "/scripts/editor.js": "/scripts/editor.js?id=cf5113c9151107080153",
-    "/scripts/manifest.js": "/scripts/manifest.js?id=7e46f58f9e4729703f0e",
-    "/scripts/manifest.asset.php": "/scripts/manifest.asset.php?id=afc103c62e6c5e44466e",
-    "/styles/editor.css": "/styles/editor.css?id=dafbe64189fb3d19a848",
-    "/styles/app.css": "/styles/app.css?id=073954ae413a9ffc3a09",
+    "/scripts/app.js": "/scripts/app.js?id=b7dbef67055d5baf2fd1",
+    "/scripts/customizer.js": "/scripts/customizer.js?id=3a97b5a26aa10915ce3e",
+    "/scripts/editor.js": "/scripts/editor.js?id=71e50c01247197e12e6d",
+    "/scripts/manifest.js": "/scripts/manifest.js?id=f7108b6ccbdcb3f7f5a0",
+    "/scripts/manifest.asset.php": "/scripts/manifest.asset.php?id=a2d00152677e4a4a0903",
+    "/styles/editor.css": "/styles/editor.css?id=24f89e95f9f613f0d2cb",
+    "/styles/app.css": "/styles/app.css?id=40a63ec42bfad12e20c9",
+    "/scripts/vendor.js": "/scripts/vendor.js?id=50276f99a7175c30a9a4",
     "/images/.gitkeep": "/images/.gitkeep?id=d41d8cd98f00b204e980",
     "/fonts/.gitkeep": "/fonts/.gitkeep?id=d41d8cd98f00b204e980"
 }

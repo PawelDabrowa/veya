@@ -17,7 +17,7 @@ while( have_rows('steps') ): the_row()
   <!--Right Col-->
   <div class="outer flex flex-col order-1 lg:w-1/2 justify-center items-start py-4 sm:px-16 px-8 mr-4 sm:mr-8">
     <div class="number text-sm">{{ get_row_index() }}</div>
-      <h2 class="text-4xl pt-4 font-bold purple">{{ the_sub_field('title') }}</h2>
+      <h2 class="text-4xl pt-4 font-semibold purple">{{ the_sub_field('title') }}</h2>
       <p class="leading-normal purple text-xs my-6 mr-4 sm:mr-12">{{ the_sub_field('text') }}</p>
   </div>
 </div>

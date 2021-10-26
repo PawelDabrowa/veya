@@ -1,4 +1,4 @@
-<div class=" mx-auto flex flex-col md:flex-row items-center">
+<div class="container mx-auto flex flex-col md:flex-row items-center">
   <!--Left Col-->
   <div class="flex flex-col lg:w-1/2 justify-center items-start py-4 px-8 mr-4 sm:mr-8">
     @if ( get_field('title'))
@@ -13,7 +13,9 @@
     </a>
     @endif
   </div>
+  <!--Right Col-->
   <div class="w-full lg:w-1/2 lg:py-6 text-center">
+    <!--Add your product image here-->
       <img src="@if (has_post_thumbnail()) {!! get_the_post_thumbnail_url() !!}" alt="Dam" @endif>
   </div>
 </div>
