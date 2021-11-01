@@ -72,7 +72,7 @@ Make sure all dependencies have been installed before moving on:
 - [Node.js](http://nodejs.org/) >= 12.14.0
 - [Yarn](https://yarnpkg.com/en/docs/install)
 
-## Theme installation
+## Theme installatin
 
 Install Sage using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
 

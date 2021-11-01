@@ -1,0 +1,35 @@
+#tea {
+  @include mob(600) {
+    display: flex;
+  }
+
+  .about-picture-container-tea {
+    background: var(--ff-primary-tea);
+    border: 0.5rem solid var(--clr-primary-tea);
+    max-width: 30rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .about-picture-tea {
+    transition: var(--transition-tea);
+  }
+
+  .about-picture-container-tea:hover .about-picture-tea {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+
+  .about-text-tea {
+    max-width: 26rem;
+    color: var(--clr-grey-5);
+  }
+
+  .about-info-tea {
+    padding-left: 0m;
+
+    @include mob(600) {
+      padding-left: 2rem;
+    }
+  }
+}

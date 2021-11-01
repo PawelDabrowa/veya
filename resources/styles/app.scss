@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 
 @import "common/variables";
+@import "common/mixin";
 @import "common/global";
 
 @import "tailwindcss/components";
@@ -12,3 +13,5 @@
 
 @import "common/global-tea";
 @import "tea/tea-header";
+@import "tea/tea-skills";
+@import "tea/tea-about";

@@ -1,0 +1,58 @@
+/*
+=======
+Skills
+=======
+*/
+
+#tea {
+  &.skills-tea {
+    background-color: var(--clr-grey-10-tea);
+    cursor: pointer;
+
+    @include mob(600) {
+      display: flex;
+    }
+  }
+
+  .skill-tea {
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: var(--transition-tea);
+  }
+
+  .skill-icon-tea {
+    font-size: 2.5rem;
+    margin-bottom: 1.25;
+    margin-bottom: 10rem;
+    transition: var(--transition-tea);
+    display: inline;
+    color: var(--clr-primary-tea);
+  }
+
+  .skill-text-tea {
+    color: var(--clr-grey-5-tea);
+    max-width: 17rem;
+    margin: 0 auto;
+  }
+
+  .skill-tea:hover {
+    background: var(--clr-white-tea);
+    box-shadow: 0 2px var(--clr-primary-tea);
+
+    .skill-icon-tea {
+      transform: translateY(-5px);
+    }
+  }
+
+  @include mob(600) {
+    .skill-tea {
+      width: 50%;
+    }
+  }
+
+  @include mob(1024) {
+    .skill-tea {
+      width: 25%;
+    }
+  }
+}

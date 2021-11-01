@@ -4,7 +4,7 @@
   Icon: editor-paste-text
 --}}
 
-<Section data-{{ $block['id'] }} class="{{ $block['classes'] }} relative my-10">
+<section data-{{ $block['id'] }} class="{{ $block['classes'] }} relative my-10">
   <div id="right-triangle" class="hidden md:block triangles"></div>
   <div class='triangles-wrapper'>
     <h2 class='text-center text-4xl font-bold mb-4 pt-16 md:pt-0 purple'>{!!(get_field('title'))!!}</h2>
@@ -64,5 +64,5 @@
   </div>
   </div>
 <div id="down-triangle" class="triangles hidden md:block"></div>
-</Section>
+</section>
 

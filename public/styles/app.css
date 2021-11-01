@@ -566,6 +566,33 @@ video {
 
 /** Colors */
 
+/**
+ * MIXIN: Responsive Media Queries.
+ *
+ * Creates responsive media queries for eight different screen sizes.
+ * These are based on min-width which means if x is the size then your
+ * CSS will affect any device with screen width x and above.
+ *
+ * USAGE: 
+ *	@include mob(480)  { }
+ *	@include mob(600)  { }
+ *	@include mob(768)  { }
+ *	@include mob(1024) { }
+ *	@include mob(1140) { }
+ *	@include mob(1280) { }
+ *	@include mob(1536) { }
+ *
+ * CSS content goes inside {} brackets. These mixins should be used inside
+ * a class definition. For example:
+ *
+ * The following CSS will hide the .header on screen width 320px and above.
+ * .header {
+ * 	  @include mob(320)  { display: none; }
+ * }
+ *
+ * 
+ */
+
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -31392,6 +31419,7 @@ Global Tea Styles
 
 #tea p {
   margin-bottom: 1.25rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -31429,10 +31457,11 @@ Global Tea Styles
 
 #tea .tea-btn {
   text-transform: uppercase;
-  color: var(--clr-primary-tea);
+  background: var(--clr-primary-tea);
+  color: var(--clr-white-tea);
   padding: 0.75rem 1rem;
   letter-spacing: var(--spacing-tea);
-  display: inline;
+  display: inline-block;
   font-weight: 700;
   transition: var(--transition-tea);
   font-size: 1rem;
@@ -31444,8 +31473,36 @@ Global Tea Styles
 #tea .tea-btn:hover {
   color: var(--clr-primary-tea);
   background-color: var(--clr-primary-light-tea);
-  font-size: 1.25rem;
-  padding: 1rem 1.75rem;
+}
+
+#tea .section-title-tea h3 {
+  color: var(--clr-primary-tea);
+  font-family: var(--ff-primary-tea);
+}
+
+#tea .section-title-tea h3 .section-title-tea {
+  margin-bottom: 2rem;
+}
+
+#tea.section-center-tea {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media (min-width: 768px) {
+  #tea.section-center-tea {
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
+}
+
+#tea .clearfix::after,
+#tea .clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*
@@ -31490,6 +31547,103 @@ Header
   outline-offset: 0.25rem;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
+}
+
+/*
+=======
+Skills
+=======
+*/
+
+#tea.skills-tea {
+  background-color: var(--clr-grey-10-tea);
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  #tea.skills-tea {
+    display: flex;
+  }
+}
+
+#tea .skill-tea {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition-tea);
+}
+
+#tea .skill-icon-tea {
+  font-size: 2.5rem;
+  margin-bottom: 1.25;
+  margin-bottom: 10rem;
+  transition: var(--transition-tea);
+  display: inline;
+  color: var(--clr-primary-tea);
+}
+
+#tea .skill-text-tea {
+  color: var(--clr-grey-5-tea);
+  max-width: 17rem;
+  margin: 0 auto;
+}
+
+#tea .skill-tea:hover {
+  background: var(--clr-white-tea);
+  box-shadow: 0 2px var(--clr-primary-tea);
+}
+
+#tea .skill-tea:hover .skill-icon-tea {
+  transform: translateY(-5px);
+}
+
+@media (min-width: 600px) {
+  #tea .skill-tea {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #tea .skill-tea {
+    width: 25%;
+  }
+}
+
+@media (min-width: 600px) {
+  #tea {
+    display: flex;
+  }
+}
+
+#tea .about-picture-container-tea {
+  background: var(--ff-primary-tea);
+  border: 0.5rem solid var(--clr-primary-tea);
+  max-width: 30rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#tea .about-picture-tea {
+  transition: var(--transition-tea);
+}
+
+#tea .about-picture-container-tea:hover .about-picture-tea {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+#tea .about-text-tea {
+  max-width: 26rem;
+  color: var(--clr-grey-5);
+}
+
+#tea .about-info-tea {
+  padding-left: 0m;
+}
+
+@media (min-width: 600px) {
+  #tea .about-info-tea {
+    padding-left: 2rem;
+  }
 }
 
 @media (min-width: 640px) {
