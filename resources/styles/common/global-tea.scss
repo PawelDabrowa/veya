@@ -71,6 +71,7 @@ Global Tea Styles
 
   p {
     margin-bottom: 1.25rem;
+    font-size: 0.8rem;
   }
 
   @media screen and (min-width: 800px) {
@@ -106,10 +107,11 @@ Global Tea Styles
 
   .tea-btn {
     text-transform: uppercase;
-    color: var(--clr-primary-tea);
+    background: var(--clr-primary-tea);
+    color: var(--clr-white-tea);
     padding: 0.75rem 1rem;
     letter-spacing: var(--spacing-tea);
-    display: inline;
+    display: inline-block;
     font-weight: 700;
     transition: var(--transition-tea);
     font-size: 1rem;
@@ -120,8 +122,33 @@ Global Tea Styles
     &:hover {
       color: var(--clr-primary-tea);
       background-color: var(--clr-primary-light-tea);
-      font-size: 1.25rem;
-      padding: 1rem 1.75rem;
     }
+  }
+
+  .section-title-tea h3 {
+    color: var(--clr-primary-tea);
+    font-family: var(--ff-primary-tea);
+    .section-title-tea {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &.section-center-tea {
+    padding: 4rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+
+    @include mob(768) {
+      width: 95vw;
+      padding: 4rem 1rem;
+    }
+  }
+
+  .clearfix::after,
+  .clearfix::before {
+    content: "";
+    clear: both;
+    display: table;
   }
 }
